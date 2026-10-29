@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo.png" alt="BusRoute" width="360">
+  <img src="public/readmelogo.png" alt="BusRoute" width="360">
 </p>
 
 # BusRoute (বাসরুট)
