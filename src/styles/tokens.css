@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --color-canvas: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-raised: #ffffff;
+  --color-hairline: #e2e8f0;
+  --color-hairline-soft: #f1f5f9;
+  --color-hairline-strong: #cbd5e1;
+
+  /* Text */
+  --color-ink: #0a0a0a;
+  --color-ink-muted: #525252;
+  --color-ink-on-block: #000000;
+
+  /* Actions */
+  --color-button-primary-bg: #0a0a0a;
+  --color-button-primary-text: #ffffff;
+  --color-button-primary-pressed: #262626;
+  --color-focus-ring: #0a0a0a;
+
+  /* Pastel blocks */
+  --color-block-lime: #dceeb1;
+  --color-block-lilac: #c5b0f4;
+  --color-block-cream: #f4ecd6;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 50px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-hair: 1px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+  --space-section: 64px;
+
+  /* Typography */
+  --font-body: "Average Sans", "Noto Serif Bengali", system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

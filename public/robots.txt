@@ -1,0 +1,34 @@
+# Robots.txt for Dhaka Bus Route & Fare Finder (BusRoute)
+
+User-agent: *
+Allow: /
+Allow: /routes
+Allow: /fare
+Allow: /about
+Allow: /bus/
+Allow: /stop/
+Allow: /assets/
+Allow: /fonts/
+
+# Protect search query duplicates
+Disallow: /*?*runningNowOnly=*
+
+# Explicitly welcome major AI search bots for citations (AEO / GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Canonical Sitemap Reference
+Sitemap: https://mybusroute.vercel.app/sitemap.xml
+

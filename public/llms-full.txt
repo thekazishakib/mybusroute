@@ -1,0 +1,33 @@
+# BusRoute - Dhaka Bus Route & Fare Finder (Full Knowledge Base)
+> The authoritative digital guide to metropolitan Dhaka's local bus routes, intermediate stoppages, and official BRTA government fares.
+
+## System Architecture & Data Sources
+- **Project Name:** BusRoute (Dhaka Bus Route & Fare Finder)
+- **Primary Domain:** https://mybusroute.vercel.app
+- **Lead Developer & System Architect:** Kazi Shakib (Portfolio: https://www.kazishakib.com, GitHub: https://github.com/thekazishakib, LinkedIn: https://bd.linkedin.com/in/kazishakib)
+- **Data Provenance:** Bus route and stoppage inventories collected from official Bangladesh Government sources:
+  - Bangladesh Road Transport Authority (BRTA)
+  - Dhaka Transport Coordination Authority (DTCA)
+- **Algorithmic Contributions:** Custom in-memory graph search, interchange routing, and fare calculation developed by Kazi Shakib.
+
+## Metropolitan Transit Network
+- **Total Bus Routes:** 184 verified local bus services.
+- **Total Bus Stops:** 260 stops across Dhaka North, Dhaka South, Mirpur, Uttara, Motijheel, Old Dhaka, Savar, Gazipur corridors.
+- **Language Support:** Bilingual Bengali (বাংলা) and English (en).
+
+## Official BRTA Fare Policy Summary
+1. **Per Kilometer Rate:** ৳2.45 per km in Dhaka metropolitan area.
+2. **Minimum Fare:**
+   - ৳20 for large bus services.
+   - ৳10 for minibus services.
+3. **Student Half Fare:**
+   - 50% discount on regular fare with physical institutional student ID card.
+   - Applicable on local buses within city limits.
+   - Operates 7:00 AM to 8:00 PM; exempt on government public holidays.
+
+## Web Endpoints
+- `/` - Interactive journey planner with live Leaflet map and road geometry.
+- `/routes` - Searchable bus index with stop chips and route details.
+- `/fare` - Complete breakdown of BRTA circular, fare tables, and commuter advisories.
+- `/about` - Technical architecture, developer credentials, and government citations.
+

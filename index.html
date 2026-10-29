@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=()" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; connect-src 'self' https://*.tile.openstreetmap.org https://router.project-osrm.org https:; font-src 'self' data:;"
+    />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mybusroute.vercel.app/" />
+    <link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/" />
+    <link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://mybusroute.vercel.app/" />
+
+    <!-- Primary Title & Meta Description -->
+    <title>BusRoute | বাসরুট — Dhaka Bus Route & Fare Finder</title>
+    <meta name="description" content="ঢাকার ১৮৪টি বাসের রুট, ২৬০টি স্টপেজ এবং বিআরটিএ (BRTA) অনুমোদিত সঠিক বাস ভাড়া এক পলকে জানুন। নির্ভুল ইন্টারচেঞ্জ ও রোড ম্যাপ।" />
+    <meta name="author" content="Kazi Shakib" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Geotagging for Dhaka, Bangladesh -->
+    <meta name="geo.region" content="BD-13" />
+    <meta name="geo.placename" content="Dhaka, Bangladesh" />
+    <meta name="geo.position" content="23.8103;90.4125" />
+    <meta name="ICBM" content="23.8103, 90.4125" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BusRoute | বাসরুট" />
+    <meta property="og:title" content="BusRoute | বাসরুট — Dhaka Bus Route & Fare Finder" />
+    <meta property="og:description" content="Find Dhaka local bus routes, intermediate stops, road-accurate maps, and official BRTA fares instantly." />
+    <meta property="og:url" content="https://mybusroute.vercel.app/" />
+    <meta property="og:image" content="https://mybusroute.vercel.app/hero-bus.png" />
+    <meta property="og:locale" content="bn_BD" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BusRoute | বাসরুট — Dhaka Bus Route & Fare Finder" />
+    <meta name="twitter:description" content="Find Dhaka local bus routes, intermediate stops, road-accurate maps, and official BRTA fares instantly." />
+    <meta name="twitter:image" content="https://mybusroute.vercel.app/hero-bus.png" />
+    <meta name="twitter:creator" content="@thekazishakib" />
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://mybusroute.vercel.app/#website",
+            "url": "https://mybusroute.vercel.app/",
+            "name": "BusRoute | বাসরুট",
+            "description": "Dhaka city local bus route finder with 184 routes, 260 stops, and official BRTA bus fares.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "BusRoute BD",
+              "url": "https://mybusroute.vercel.app/",
+              "logo": "https://mybusroute.vercel.app/logo.png",
+              "founder": {
+                "@type": "Person",
+                "name": "Kazi Shakib",
+                "url": "https://www.kazishakib.com"
+              }
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://mybusroute.vercel.app/?from={from_stop}&to={to_stop}",
+              "query-input": "required name=from_stop"
+            }
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://mybusroute.vercel.app/#webapp",
+            "name": "BusRoute Dhaka",
+            "url": "https://mybusroute.vercel.app/",
+            "applicationCategory": "TravelApplication",
+            "operatingSystem": "All",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "BDT"
+            },
+            "creator": {
+              "@type": "Person",
+              "name": "Kazi Shakib",
+              "url": "https://www.kazishakib.com"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "landmark_id": "L001",
+    "name_en": "Dhaka University",
+    "aliases": ["DU", "ঢাকা বিশ্ববিদ্যালয়", "ঢাবি"],
+    "stop_ids": ["S229", "S190", "S019", "S101"],
+    "stop_names_en": ["Shahbag", "Nilkhet", "Azimpur", "High Court"],
+    "source": "data/REPORT.md Landmark_Hints",
+    "status": "suggestion, not from source data"
+  },
+  {
+    "landmark_id": "L002",
+    "name_en": "TSC",
+    "aliases": ["টিএসসি", "Teacher-Student Centre"],
+    "stop_ids": ["S229"],
+    "stop_names_en": ["Shahbag"],
+    "source": "data/REPORT.md Landmark_Hints",
+    "status": "suggestion, not from source data"
+  },
+  {
+    "landmark_id": "L003",
+    "name_en": "Curzon Hall",
+    "aliases": ["কার্জন হল"],
+    "stop_ids": ["S229"],
+    "stop_names_en": ["Shahbag"],
+    "source": "data/REPORT.md Landmark_Hints",
+    "status": "suggestion, not from source data"
+  },
+  {
+    "landmark_id": "L004",
+    "name_en": "Doel Chattar",
+    "aliases": ["দোয়েল চত্বর", "Doyel Chattar"],
+    "stop_ids": ["S229"],
+    "stop_names_en": ["Shahbag"],
+    "source": "data/REPORT.md Landmark_Hints",
+    "status": "suggestion, not from source data"
+  }
+]

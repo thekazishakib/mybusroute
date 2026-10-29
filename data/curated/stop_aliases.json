@@ -1,0 +1,282 @@
+[
+  {
+    "alias_id": "A001",
+    "stop_id": "S245",
+    "canonical_name_en": "Shyamoli",
+    "variants": ["Shvyamoli"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A002",
+    "stop_id": "S249",
+    "canonical_name_en": "Sony Cinema Hall",
+    "variants": ["Sony Hall", "Sony Cenema Hall"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A003",
+    "stop_id": "S011",
+    "canonical_name_en": "Amin Bazar",
+    "variants": ["Aminbazar"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A004",
+    "stop_id": "S015",
+    "canonical_name_en": "Asad Gate",
+    "variants": ["Asad gate"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A005",
+    "stop_id": "S151",
+    "canonical_name_en": "Malibagh Railgate",
+    "variants": ["Malibagh Rail Gate", "Malibagh Railaate 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A006",
+    "stop_id": "S232",
+    "canonical_name_en": "Shantinagar",
+    "variants": ["Shantinaaar"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A007",
+    "stop_id": "S235",
+    "canonical_name_en": "Shia Masjid",
+    "variants": ["Shia Mosque"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A008",
+    "stop_id": "S121",
+    "canonical_name_en": "Kakali",
+    "variants": ["kakali", "Kakoli"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A009",
+    "stop_id": "S061",
+    "canonical_name_en": "Dainik Bangla Moor",
+    "variants": ["Dainik Bangla", "Dainik Ranala"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A010",
+    "stop_id": "S127",
+    "canonical_name_en": "Kamalapur",
+    "variants": ["Kamlapur"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A011",
+    "stop_id": "S227",
+    "canonical_name_en": "Sayedabad",
+    "variants": ["Savedabad 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A012",
+    "stop_id": "S060",
+    "canonical_name_en": "College Gate",
+    "variants": ["Colleae Gate 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A013",
+    "stop_id": "S134",
+    "canonical_name_en": "Kawran Bazar",
+    "variants": ["Karwan Bazar", "Kawran Bazar 2", "Kawran Bazarz 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A014",
+    "stop_id": "S109",
+    "canonical_name_en": "Jamuna Future Park",
+    "variants": ["Jamuna Future"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A015",
+    "stop_id": "S123",
+    "canonical_name_en": "Kalabagan",
+    "variants": ["Kolabagan"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A016",
+    "stop_id": "S199",
+    "canonical_name_en": "Panthapath",
+    "variants": ["Panthopoth"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A017",
+    "stop_id": "S145",
+    "canonical_name_en": "Kuril Bishwa Road",
+    "variants": ["Kuril Bissho Road"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A018",
+    "stop_id": "S156",
+    "canonical_name_en": "Matsya Bhaban",
+    "variants": ["Motso Vobon", "Matsva Bhaban"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A019",
+    "stop_id": "S150",
+    "canonical_name_en": "Malibagh Moor",
+    "variants": ["Malibagg Mor"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A020",
+    "stop_id": "S193",
+    "canonical_name_en": "Notun Bazar",
+    "variants": ["Natun Bazar"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A021",
+    "stop_id": "S098",
+    "canonical_name_en": "Hazipara",
+    "variants": ["Hazivara 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A022",
+    "stop_id": "S050",
+    "canonical_name_en": "Chairman Bari",
+    "variants": ["Chairman Bari 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A023",
+    "stop_id": "S242",
+    "canonical_name_en": "Shonir Akhra",
+    "variants": ["Shanir Akhra"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A024",
+    "stop_id": "S175",
+    "canonical_name_en": "Mohakhali",
+    "variants": ["Mohakhali 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A025",
+    "stop_id": "S266",
+    "canonical_name_en": "Vashantek",
+    "variants": ["Vashantek 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A026",
+    "stop_id": "S231",
+    "canonical_name_en": "Shankar",
+    "variants": ["Shankar 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A027",
+    "stop_id": "S171",
+    "canonical_name_en": "Mirpur 2",
+    "variants": ["Mirour 22", "Mirour 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A028",
+    "stop_id": "S219",
+    "canonical_name_en": "Sadarghat",
+    "variants": ["Sadarahat", "Sadarahat 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A029",
+    "stop_id": "S164",
+    "canonical_name_en": "Mirpur 1",
+    "variants": ["Mirour 12"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A030",
+    "stop_id": "S104",
+    "canonical_name_en": "Ittefaq Moor",
+    "variants": ["Ittefagq Moor"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A031",
+    "stop_id": "S070",
+    "canonical_name_en": "Dhanmondi 27",
+    "variants": ["Dhanmondi 27 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A032",
+    "stop_id": "S230",
+    "canonical_name_en": "Shahjadpur",
+    "variants": ["Shahiadpur 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A033",
+    "stop_id": "S215",
+    "canonical_name_en": "Ring Road",
+    "variants": ["Ring road"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A034",
+    "stop_id": "S187",
+    "canonical_name_en": "Naya Bazar",
+    "variants": ["Nava Bazarz 2"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  },
+  {
+    "alias_id": "A035",
+    "stop_id": "S167",
+    "canonical_name_en": "Mirpur 12",
+    "variants": ["Mirpur 12 MPT GIANTS at"],
+    "source": "data/REPORT.md",
+    "status": "verified_ocr_variant"
+  }
+]

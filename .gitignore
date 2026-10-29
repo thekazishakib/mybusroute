@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production output
+dist/
+build/
+
+# Vercel deployment cache
+.vercel/
+
+# Test coverage and playwright results
+coverage/
+test-results/
+playwright-report/
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.zip
+
+# Environment variables
+.env*
+!.env.example
+

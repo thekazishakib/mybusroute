@@ -1,0 +1,93 @@
+[
+  {
+    "group_id": "G001",
+    "name_en": "Mirpur",
+    "stop_ids": ["S164", "S171", "S165", "S166", "S167", "S168", "S169", "S170", "S172"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G002",
+    "name_en": "Gulshan",
+    "stop_ids": ["S092", "S093", "S094", "S095"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G003",
+    "name_en": "Dhanmondi",
+    "stop_ids": ["S069", "S070", "S071"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G004",
+    "name_en": "Badda",
+    "stop_ids": ["S021", "S022", "S149", "S263"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G005",
+    "name_en": "Uttara",
+    "stop_ids": ["S264", "S114", "S265"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G006",
+    "name_en": "Mohammadpur",
+    "stop_ids": ["S176", "S177"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G007",
+    "name_en": "Malibagh",
+    "stop_ids": ["S150", "S151"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G008",
+    "name_en": "Rampura",
+    "stop_ids": ["S210", "S211"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G009",
+    "name_en": "Kuril",
+    "stop_ids": ["S145", "S146", "S147"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G010",
+    "name_en": "Banasree",
+    "stop_ids": ["S028", "S250"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G011",
+    "name_en": "Gazipur",
+    "stop_ids": ["S084", "S085", "S086"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G012",
+    "name_en": "Savar",
+    "stop_ids": ["S225", "S226"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  },
+  {
+    "group_id": "G013",
+    "name_en": "Ashulia",
+    "stop_ids": ["S016", "S017"],
+    "source": "data/normalized/stops.json prefix pattern",
+    "status": "verified_data_pattern"
+  }
+]

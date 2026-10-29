@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Noto Serif Bengali";
+  src: url("/fonts/NotoSerifBengali-VariableFont_wdth,wght.woff2") format("woff2");
+  font-weight: 400 900;
+  font-display: swap;
+  unicode-range: U+0980-09FF, U+200C-200D, U+0964-0965;
+}
+
+@font-face {
+  font-family: "Average Sans";
+  src: url("/fonts/AverageSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+body {
+  font-family: var(--font-body);
+  font-synthesis: none;
+  font-kerning: normal;
+}
+
+:lang(bn) {
+  letter-spacing: 0;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+:lang(bn) h1,
+:lang(bn) h2,
+:lang(bn) h3 {
+  line-height: 1.35;
+}
+
+:lang(en) {
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+:lang(en) h1 {
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+:lang(en) h2,
+:lang(en) h3 {
+  line-height: 1.35;
+}
+
+:lang(en) .eyebrow,
+:lang(en) .caption {
+  text-transform: uppercase;
+}
