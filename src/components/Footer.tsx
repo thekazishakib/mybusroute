@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useT } from '../i18n/useT';
-import { PortfolioIcon, LinkedinIcon, GithubIcon, CalendarIcon } from './Icons';
+import { PortfolioIcon, LinkedinIcon, GithubIcon, CalendarIcon, EditIcon, CloseIcon } from './Icons';
+import { ReportModal } from './ReportModal';
 
 export const Footer: React.FC = () => {
   const { lang, t } = useT();
   const [activeModal, setActiveModal] = useState<'privacy' | 'terms' | 'security' | null>(null);
+  const [isReportOpen, setIsReportOpen] = useState(false);
 
   return (
     <footer
       style={{
-        backgroundColor: '#ffffff',
+        backgroundColor: 'var(--color-surface)',
         borderTop: '1px solid var(--color-hairline)',
         padding: '48px 20px 36px',
         marginTop: 'auto',
@@ -37,6 +39,7 @@ export const Footer: React.FC = () => {
                 <img
                   src="/logo.png"
                   alt="BusRoute"
+                  className="brand-logo"
                   style={{
                     height: '32px',
                     width: 'auto',
@@ -96,6 +99,31 @@ export const Footer: React.FC = () => {
                   {l.label}
                 </Link>
               ))}
+
+              <button
+                type="button"
+                onClick={() => setIsReportOpen(true)}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  marginTop: '4px',
+                  backgroundColor: 'var(--color-surface-raised)',
+                  border: '1px solid var(--color-hairline)',
+                  borderRadius: 'var(--radius-full)',
+                  padding: '7px 14px',
+                  fontSize: '12.5px',
+                  fontWeight: 600,
+                  color: 'var(--color-ink)',
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease',
+                  alignSelf: 'flex-start',
+                }}
+                lang={lang}
+              >
+                <EditIcon size={14} color="var(--color-ink)" />
+                <span>{lang === 'bn' ? 'তথ্য সংশোধন বা মিসিং রিপোর্ট' : 'Report Wrong or Missing Info'}</span>
+              </button>
             </div>
           </div>
 
@@ -115,7 +143,7 @@ export const Footer: React.FC = () => {
                     width: '8px',
                     height: '8px',
                     borderRadius: '50%',
-                    backgroundColor: '#0a0a0a',
+                    backgroundColor: 'var(--color-ink)',
                   }}
                 />
                 <span style={{ fontSize: '11.5px', fontWeight: 700, color: 'var(--color-ink-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
@@ -145,11 +173,11 @@ export const Footer: React.FC = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#0a0a0a',
+                    color: 'var(--color-ink)',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <PortfolioIcon size={16} color="#0a0a0a" />
+                  <PortfolioIcon size={16} color="var(--color-ink)" />
                 </a>
 
                 <a
@@ -167,11 +195,11 @@ export const Footer: React.FC = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#0a0a0a',
+                    color: 'var(--color-ink)',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <LinkedinIcon size={16} color="#0a0a0a" />
+                  <LinkedinIcon size={16} color="var(--color-ink)" />
                 </a>
 
                 <a
@@ -189,11 +217,11 @@ export const Footer: React.FC = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#0a0a0a',
+                    color: 'var(--color-ink)',
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <GithubIcon size={16} color="#0a0a0a" />
+                  <GithubIcon size={16} color="var(--color-ink)" />
                 </a>
               </div>
             </div>
@@ -220,28 +248,42 @@ export const Footer: React.FC = () => {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
-            <button
-              type="button"
-              onClick={() => setActiveModal('privacy')}
-              style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
+            <Link
+              to="/privacy"
+              style={{ color: 'inherit', textDecoration: 'underline' }}
             >
               {lang === 'bn' ? 'প্রাইভেসি পলিসি' : 'Privacy Policy'}
-            </button>
+            </Link>
             <span>•</span>
-            <button
-              type="button"
-              onClick={() => setActiveModal('terms')}
-              style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
+            <Link
+              to="/terms"
+              style={{ color: 'inherit', textDecoration: 'underline' }}
             >
               {lang === 'bn' ? 'ব্যবহারের শর্তাবলী' : 'Terms of Service'}
-            </button>
+            </Link>
+            <span>•</span>
+            <Link
+              to="/about"
+              style={{ color: 'inherit', textDecoration: 'underline' }}
+            >
+              {lang === 'bn' ? 'নিরাপত্তা ও সরকারি ডেটা' : 'Security & Govt Data'}
+            </Link>
             <span>•</span>
             <button
               type="button"
-              onClick={() => setActiveModal('security')}
-              style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
+              onClick={() => setIsReportOpen(true)}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'inherit',
+                cursor: 'pointer',
+                padding: 0,
+                fontSize: '12.5px',
+                textDecoration: 'underline',
+              }}
+              lang={lang}
             >
-              {lang === 'bn' ? 'নিরাপত্তা ও সরকারি ডেটা' : 'Security & Govt Data'}
+              {lang === 'bn' ? 'তথ্য সংশোধন বা রিপোর্ট' : 'Report Missing / Correction'}
             </button>
           </div>
 
@@ -288,7 +330,7 @@ export const Footer: React.FC = () => {
         >
           <div
             style={{
-              backgroundColor: '#ffffff',
+              backgroundColor: 'var(--color-surface-raised)',
               borderRadius: '20px',
               maxWidth: '560px',
               width: '100%',
@@ -309,20 +351,19 @@ export const Footer: React.FC = () => {
                 type="button"
                 onClick={() => setActiveModal(null)}
                 style={{
-                  width: '30px',
-                  height: '30px',
+                  width: '32px',
+                  height: '32px',
                   borderRadius: '50%',
                   border: '1px solid var(--color-hairline)',
-                  backgroundColor: '#f8fafc',
+                  backgroundColor: 'var(--color-surface)',
                   cursor: 'pointer',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontWeight: 700,
                   color: 'var(--color-ink)',
                 }}
               >
-                ✕
+                <CloseIcon size={14} color="var(--color-ink)" />
               </button>
             </div>
 
@@ -434,8 +475,8 @@ export const Footer: React.FC = () => {
                 style={{
                   padding: '8px 20px',
                   borderRadius: 'var(--radius-full)',
-                  backgroundColor: '#0a0a0a',
-                  color: '#ffffff',
+                  backgroundColor: 'var(--color-button-primary-bg)',
+                  color: 'var(--color-button-primary-text)',
                   border: 'none',
                   fontSize: '13px',
                   fontWeight: 600,
@@ -448,6 +489,8 @@ export const Footer: React.FC = () => {
           </div>
         </div>
       )}
+
+      <ReportModal isOpen={isReportOpen} onClose={() => setIsReportOpen(false)} />
     </footer>
   );
 };

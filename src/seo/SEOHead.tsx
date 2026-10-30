@@ -41,6 +41,12 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     } else if (currentPath.startsWith('/about')) {
       pageTitle = lang === 'bn' ? SEO_CONFIG.pages.about.titleBn : SEO_CONFIG.pages.about.titleEn;
       pageDesc = lang === 'bn' ? SEO_CONFIG.pages.about.descriptionBn : SEO_CONFIG.pages.about.descriptionEn;
+    } else if (currentPath.startsWith('/privacy')) {
+      pageTitle = lang === 'bn' ? SEO_CONFIG.pages.privacy.titleBn : SEO_CONFIG.pages.privacy.titleEn;
+      pageDesc = lang === 'bn' ? SEO_CONFIG.pages.privacy.descriptionBn : SEO_CONFIG.pages.privacy.descriptionEn;
+    } else if (currentPath.startsWith('/terms')) {
+      pageTitle = lang === 'bn' ? SEO_CONFIG.pages.terms.titleBn : SEO_CONFIG.pages.terms.titleEn;
+      pageDesc = lang === 'bn' ? SEO_CONFIG.pages.terms.descriptionBn : SEO_CONFIG.pages.terms.descriptionEn;
     } else {
       pageTitle = SEO_CONFIG.siteName;
       pageDesc = lang === 'bn' ? SEO_CONFIG.pages.home.descriptionBn : SEO_CONFIG.pages.home.descriptionEn;
@@ -126,8 +132,11 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
           },
           potentialAction: {
             '@type': 'SearchAction',
-            target: `${SEO_CONFIG.siteUrl}/?from={from_stop}&to={to_stop}`,
-            'query-input': 'required name=from_stop',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: `${SEO_CONFIG.siteUrl}/?q={search_term_string}`,
+            },
+            'query-input': 'required name=search_term_string',
           },
         },
         {

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useT, formatNumber } from '../i18n/useT';
-import { getStopDisplayName, isStopIncomplete } from '../data/load';
+import { getStopDisplayName } from '../data/load';
 import type { Stop } from '../data/types';
 
 interface StopListProps {
@@ -13,30 +12,27 @@ export const StopList: React.FC<StopListProps> = ({
   stops,
   highlightStopIds,
 }) => {
-  const { lang, t } = useT();
+  const { lang } = useT();
 
   return (
     <ol className="stop-list">
       {stops.map((stop, idx) => {
         const isHighlighted = highlightStopIds?.has(stop.stop_id);
-        const incomplete = isStopIncomplete(stop);
         return (
           <li key={`${stop.stop_id}-${idx}`} className="stop-row">
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
               <span className="stop-seq" lang={lang}>
                 {formatNumber(idx + 1, lang)}.
               </span>
-              <Link
-                to={`/stop/${stop.stop_id}`}
+              <span
                 lang={lang}
                 style={{
-                  fontWeight: isHighlighted ? 700 : 400,
-                  textDecoration: 'underline',
-                  textUnderlineOffset: '4px',
+                  fontWeight: isHighlighted ? 700 : 500,
+                  color: isHighlighted ? 'var(--color-ink)' : 'inherit',
                 }}
               >
                 {getStopDisplayName(stop, lang)}
-              </Link>
+              </span>
             </div>
             <span className="caption" lang="en">
               {stop.stop_id}

@@ -7,6 +7,7 @@ import {
   getStopDisplayName,
 } from '../data/load';
 import { searchJourneys } from '../data/search';
+import { trackRouteSearch, trackNoRouteFound } from '../analytics/ga4';
 import { StopInput } from '../components/StopInput';
 import { Notice } from '../components/Notice';
 import { SearchResultsView } from '../components/SearchResultsView';
@@ -18,6 +19,7 @@ import {
   WalletIcon,
   LightningIcon,
   ShieldIcon,
+  CloseIcon,
 } from '../components/Icons';
 import type { Stop, JourneySearchResult } from '../data/types';
 
@@ -104,6 +106,11 @@ export const Home: React.FC = () => {
       runningNowOnly,
     });
     setResult(res);
+    if (res.options.length > 0) {
+      trackRouteSearch(fromStop.name_en, toStop.name_en, res.options.length);
+    } else {
+      trackNoRouteFound(fromStop.name_en, toStop.name_en);
+    }
     scrollToResults();
   };
 
@@ -172,7 +179,7 @@ export const Home: React.FC = () => {
               }}
               lang={lang}
             >
-              <PinIcon size={15} color="#0f172a" />
+              <PinIcon size={15} color="var(--color-ink)" />
               <span>{t('mockupEyebrow')}</span>
             </div>
 
@@ -295,13 +302,11 @@ export const Home: React.FC = () => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      fontSize: '14px',
-                      fontWeight: 700,
                       transition: 'all 0.15s ease',
                       flexShrink: 0,
                     }}
                   >
-                    ✕
+                    <CloseIcon size={14} color="var(--color-ink-muted)" />
                   </button>
                 )}
               </div>
@@ -321,11 +326,11 @@ export const Home: React.FC = () => {
                 onClick={() => setRunningNowOnly(!runningNowOnly)}
                 style={{
                   border: '1px solid',
-                  borderColor: runningNowOnly ? '#0a0a0a' : 'var(--color-hairline)',
+                  borderColor: runningNowOnly ? 'var(--color-button-primary-bg)' : 'var(--color-hairline)',
                   borderRadius: '9999px',
                   padding: '5px 14px',
-                  backgroundColor: runningNowOnly ? '#0a0a0a' : 'var(--color-surface)',
-                  color: runningNowOnly ? '#ffffff' : 'var(--color-ink-muted)',
+                  backgroundColor: runningNowOnly ? 'var(--color-button-primary-bg)' : 'var(--color-surface)',
+                  color: runningNowOnly ? 'var(--color-button-primary-text)' : 'var(--color-ink-muted)',
                   fontSize: '12.5px',
                   fontWeight: runningNowOnly ? 600 : 500,
                   cursor: 'pointer',
@@ -431,22 +436,22 @@ export const Home: React.FC = () => {
         >
           {[
             {
-              icon: <PinIcon size={20} color="#0f172a" />,
+              icon: <PinIcon size={20} color="var(--color-ink)" />,
               title: t('feature1Title'),
               desc: t('feature1Desc'),
             },
             {
-              icon: <WalletIcon size={20} color="#0f172a" />,
+              icon: <WalletIcon size={20} color="var(--color-ink)" />,
               title: t('feature2Title'),
               desc: t('feature2Desc'),
             },
             {
-              icon: <LightningIcon size={20} color="#0f172a" />,
+              icon: <LightningIcon size={20} color="var(--color-ink)" />,
               title: t('feature3Title'),
               desc: t('feature3Desc'),
             },
             {
-              icon: <ShieldIcon size={20} color="#0f172a" />,
+              icon: <ShieldIcon size={20} color="var(--color-ink)" />,
               title: t('feature4Title'),
               desc: t('feature4Desc'),
             },

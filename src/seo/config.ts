@@ -38,10 +38,10 @@ export const SEO_CONFIG = {
   },
   pages: {
     home: {
-      titleBn: 'বাসরুট — ঢাকার লোকাল বাসের রুট ও সরকারি ভাড়া অনুসন্ধান',
-      titleEn: 'BusRoute — Dhaka City Local Bus Routes & Official Fare Finder',
-      descriptionBn: 'ঢাকার ১৮৪টি বাসের রুট, ২৬০টি স্টপেজ এবং বিআরটিএ (BRTA) অনুমোদিত সঠিক বাস ভাড়া এক পলকে জানুন। নির্ভুল ইন্টারচেঞ্জ ও রোড ম্যাপ।',
-      descriptionEn: 'Instant Dhaka city local bus route finder with 184 routes, 260 stops, road-accurate route maps, and official BRTA bus fares.',
+      titleBn: 'বাসরুট — ঢাকার লোকাল বাসের রুট ও আনুমানিক ভাড়া অনুসন্ধান',
+      titleEn: 'BusRoute — Dhaka City Local Bus Routes & Fare Finder',
+      descriptionBn: 'ঢাকার ১৮৪টি বাসের রুট, ২৬০টি স্টপেজ এবং বিআরটিএ প্রজ্ঞাপন অনুযায়ী আনুমানিক বাস ভাড়া জানুন। নির্ভুল ইন্টারচেঞ্জ ও রোড ম্যাপ।',
+      descriptionEn: 'Instant Dhaka city local bus route finder with 184 routes, 260 stops, road-accurate route maps, and estimated fares based on BRTA rates.',
       path: '/',
     },
     routes: {
@@ -53,9 +53,9 @@ export const SEO_CONFIG = {
     },
     fare: {
       titleBn: 'ঢাকা বাস ভাড়া নির্দেশিকা ও বিআরটিএ চার্ট — বাসরুট',
-      titleEn: 'Dhaka Bus Fare Guide & Official BRTA Fare Chart — BusRoute',
-      descriptionBn: 'বিআরটিএ প্রজ্ঞাপন অনুযায়ী ঢাকা মেট্রোপলিটন এলাকার কিলোমিটার প্রতি বাস ভাড়া (৳২.৪৫/কিমি), সর্বনিম্ন ভাড়া এবং শিক্ষার্থীদের হাফ ভাড়া নীতিমালা।',
-      descriptionEn: 'Official Dhaka bus fare rules per BRTA circular: ৳2.45 per km, minimum fare, and student 50% discount policies.',
+      titleEn: 'Dhaka Bus Fare Guide & BRTA Circular Chart — BusRoute',
+      descriptionBn: 'বিআরটিএ প্রজ্ঞাপন অনুযায়ী ঢাকা মেট্রোপলিটন এলাকার কিলোমিটার প্রতি বাস ভাড়া (৳২.৭০/কিমি), সর্বনিম্ন ভাড়া এবং শিক্ষার্থীদের হাফ ভাড়া নির্দেশিকা।',
+      descriptionEn: 'Dhaka bus fare guidelines based on BRTA circular: ৳2.70 per km, minimum fare, and student 50% discount policies.',
       path: '/fare',
     },
     about: {
@@ -64,6 +64,20 @@ export const SEO_CONFIG = {
       descriptionBn: 'বাসরুট প্ল্যাটফর্মের লক্ষ্য, সরকারি ডেটা সোর্স (BRTA/DTCA) এবং ডেভেলপার কাজী সাকিব (Kazi Shakib) এর পরিচিতি ও প্রযুক্তিগত বিবরণ।',
       descriptionEn: 'Learn about BusRoute, transit data architecture sourced from BRTA/DTCA, and lead developer Kazi Shakib.',
       path: '/about',
+    },
+    privacy: {
+      titleBn: 'গোপনীয়তা নীতি (Privacy Policy) — বাসরুট',
+      titleEn: 'Privacy Policy — BusRoute Dhaka',
+      descriptionBn: 'বাসরুট প্ল্যাটফর্মের গোপনীয়তা নীতি, ডেটা সুরক্ষা এবং ব্যবহারকারীর তথ্যের নিরাপত্তা সংক্রান্ত নীতিমালা।',
+      descriptionEn: 'BusRoute Dhaka privacy policy, data practices, local storage usage, and user protection standards.',
+      path: '/privacy',
+    },
+    terms: {
+      titleBn: 'শর্তাবলী ও ডিসক্লেইমার (Terms & Disclaimer) — বাসরুট',
+      titleEn: 'Terms of Service & Transit Disclaimer — BusRoute',
+      descriptionBn: 'বাসরুট ব্যবহারের নিয়মাবলী, বিআরটিএ সরকারি ভাড়ার ডিসক্লেইমার এবং স্বাধীন পাবলিক ট্রানজিট সহায়িকা নীতিমালা।',
+      descriptionEn: 'BusRoute terms of use, BRTA transit fare disclaimer, limitations of liability, and service conditions.',
+      path: '/terms',
     },
   },
 } as const;

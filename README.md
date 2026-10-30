@@ -24,11 +24,11 @@ Live: [mybusroute.vercel.app](https://mybusroute.vercel.app)
 ## Features
 
 - Route search between two stops, with fuzzy matching for stop names
-- 176 local bus routes and 273 stops
-- Stop-by-stop lists and a map for each route (Leaflet)
-- Fare estimate from route distance
-- Bengali and English interface
-- Runs in the browser, no account needed
+- 184 local bus routes and 260 stops
+- Stop-by-stop lists and official Google Maps Directions along major highway corridors
+- Fare estimate from route distance (based on official BRTA rates)
+- Bengali and English interface with light/dark theme support
+- 100% client-side, zero database/API key requirement, runs directly in the browser
 
 ## Run locally
 
@@ -70,9 +70,10 @@ VITE_SITE_URL="https://mybusroute.vercel.app"
 
 ## Data
 
-- Bus routes and stops come from the "Local Bus" listing on dhakatc.com, read by OCR and checked by hand. Some stops are missing and some names may be misspelled, see [data/REPORT.md](data/REPORT.md) for the known gaps.
-- Fares are estimates calculated from route distance at Tk 2.70 per km with a minimum of Tk 10 (see `src/data/fare.ts`). Actual fares can differ by a few taka.
-- Route lines on the map are fetched from the public OSRM service.
+- Bus routes and stops come from the "Local Bus" listing on dhakatc.com and DTCA transit records, verified against source surveys. Some stops are missing or disputed in source records; see [data/REPORT.md](data/REPORT.md) for known gaps.
+- Fares are distance-based estimates calculated from the official BRTA notified rate (Tk 2.70 per km with a minimum of Tk 10, see `src/data/fare.ts`). Actual conductor fares can differ by ±5 Tk due to small change coin availability or stop section policies.
+- Route directions are displayed through official Google Maps Driving Directions connecting all corridor stops along major highways.
+- Data last verified & updated: October 2026.
 
 ## Author
 

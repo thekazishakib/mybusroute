@@ -7,7 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import { I18nProvider } from '../src/i18n/useT';
 import { Home } from '../src/pages/Home';
-import { RoutePage } from '../src/pages/RoutePage';
+import { BusesPage } from '../src/pages/BusesPage';
 import { resolveLegFare, resolveJourneyFare } from '../src/data/fare';
 import type { Fare } from '../src/data/types';
 
@@ -63,12 +63,12 @@ describe('Fare codepath & UI tests', () => {
     expect(fareTexts.length).toBeGreaterThan(0);
   });
 
-  it('bus page shows operating hours and stop list in v0.2', () => {
+  it('bus routes page shows operating hours and stop list in v0.2', () => {
     render(
       <I18nProvider initialLang="bn">
-        <MemoryRouter initialEntries={['/bus/B010']}>
+        <MemoryRouter initialEntries={['/routes?bus=baishakhi']}>
           <Routes>
-            <Route path="/bus/:routeId" element={<RoutePage />} />
+            <Route path="/routes" element={<BusesPage />} />
           </Routes>
         </MemoryRouter>
       </I18nProvider>

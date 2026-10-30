@@ -14,6 +14,9 @@ describe('SEO metadata', () => {
     expect(content).toContain('https://mybusroute.vercel.app/routes</loc>');
     expect(content).toContain('https://mybusroute.vercel.app/fare</loc>');
     expect(content).toContain('https://mybusroute.vercel.app/about</loc>');
+    expect(content).toContain('https://mybusroute.vercel.app/privacy</loc>');
+    expect(content).toContain('https://mybusroute.vercel.app/terms</loc>');
+    expect(content).toContain('https://mybusroute.vercel.app/routes?bus=baishakhi</loc>');
     expect(content).toContain('hreflang="bn"');
     expect(content).toContain('hreflang="en"');
   });
@@ -41,7 +44,7 @@ describe('SEO metadata', () => {
     const llmsContent = fs.readFileSync(llmsPath, 'utf-8');
     expect(llmsContent).toContain('# BusRoute - Dhaka Bus Route & Fare Finder');
     expect(llmsContent).toContain('Kazi Shakib');
-    expect(llmsContent).toContain('2.45 per kilometer');
+    expect(llmsContent).toContain('2.70 per kilometer');
     expect(llmsContent).toContain('AI Crawler Permissions');
 
     const fullContent = fs.readFileSync(llmsFullPath, 'utf-8');
@@ -74,10 +77,16 @@ describe('SEO metadata', () => {
     expect(content).toContain('name="geo.placename" content="Dhaka, Bangladesh"');
     expect(content).toContain('name="geo.position" content="23.8103;90.4125"');
 
-    // JSON-LD Schema
+    // JSON-LD Schema & Sitelinks Searchbox
     expect(content).toContain('type="application/ld+json"');
     expect(content).toContain('"@type": "WebApplication"');
     expect(content).toContain('"@type": "WebSite"');
+    expect(content).toContain('"@type": "SearchAction"');
+    expect(content).toContain('"query-input": "required name=search_term_string"');
     expect(content).toContain('Kazi Shakib');
+
+    // Google verification & semantic crawler prerender
+    expect(content).toContain('google-site-verification');
+    expect(content).toContain('Prerender / Semantic Crawl Fallback');
   });
 });

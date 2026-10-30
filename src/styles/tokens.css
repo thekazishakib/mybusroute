@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-theme="light"] {
   color-scheme: light;
 
   /* Surfaces */
@@ -48,4 +49,32 @@
   /* Typography */
   --font-body: "Average Sans", "Noto Serif Bengali", system-ui, -apple-system, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --color-canvas: #0a0a0a;
+  --color-surface: #141414;
+  --color-surface-raised: #1c1c1c;
+  --color-hairline: #2a2a2a;
+  --color-hairline-soft: #1f1f1f;
+  --color-hairline-strong: #3a3a3a;
+
+  /* Text */
+  --color-ink: #f2f2f2;
+  --color-ink-muted: #b8b8b8;
+  --color-ink-on-block: #000000;
+
+  /* Actions */
+  --color-button-primary-bg: #f2f2f2;
+  --color-button-primary-text: #0a0a0a;
+  --color-button-primary-pressed: #d9d9d9;
+  --color-focus-ring: #f2f2f2;
+
+  /* Pastel blocks */
+  --color-block-lime: #dceeb1;
+  --color-block-lilac: #c5b0f4;
+  --color-block-cream: #f4ecd6;
 }

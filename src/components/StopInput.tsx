@@ -242,7 +242,7 @@ export const StopInput: React.FC<StopInputProps> = ({
                 onClick={() => handleSelectSuggestion(item)}
               >
                 <div className="suggestion-item-header" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
-                  <span style={{ fontWeight: 600, fontSize: '15px' }} lang={lang}>
+                  <span style={{ fontWeight: 600, fontSize: '15px', color: 'var(--color-ink)' }} lang={lang}>
                     {item.kind === 'landmark' && item.landmarkStops?.[0]?.id === 'shahbag'
                       ? (lang === 'bn' ? 'ঢাকা বিশ্ববিদ্যালয় (শাহবাগ)' : 'Dhaka University (Shahbag)')
                       : lang === 'bn' && (item.label_bn || item.stop?.name_bn)

@@ -2,7 +2,7 @@ import React from 'react';
 import type { JourneyOption, Stop } from '../data/types';
 import { useT, formatNumber } from '../i18n/useT';
 import { getStopDisplayName, getRouteDisplayName, getBusOperatingHours } from '../data/load';
-import { BusIcon, MapIcon } from './Icons';
+import { BusIcon, MapIcon, ArrowRightIcon } from './Icons';
 import { RouteMap } from './RouteMap';
 
 interface RouteDetailsModalProps {
@@ -54,8 +54,10 @@ export const RouteDetailsModal: React.FC<RouteDetailsModalProps> = ({
         <h2 style={{ fontSize: '28px', fontWeight: 800, margin: '0 0 4px 0', color: 'var(--color-ink)' }} lang={lang}>
           {lang === 'bn' ? 'রুটের বিস্তারিত' : 'Route Details'}
         </h2>
-        <div style={{ fontSize: '15px', color: 'var(--color-ink-muted)', fontWeight: 500 }} lang={lang}>
-          {getStopDisplayName(fromStop, lang)} → {getStopDisplayName(toStop, lang)}
+        <div style={{ fontSize: '15px', color: 'var(--color-ink-muted)', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '6px' }} lang={lang}>
+          <span>{getStopDisplayName(fromStop, lang)}</span>
+          <ArrowRightIcon size={14} color="var(--color-ink-muted)" />
+          <span>{getStopDisplayName(toStop, lang)}</span>
         </div>
       </div>
 
@@ -151,7 +153,7 @@ export const RouteDetailsModal: React.FC<RouteDetailsModalProps> = ({
                 width: '8px',
                 height: '8px',
                 borderRadius: '50%',
-                backgroundColor: '#0a0a0a',
+                backgroundColor: 'var(--color-ink)',
                 display: 'inline-block',
               }}
             />
@@ -227,9 +229,9 @@ export const RouteDetailsModal: React.FC<RouteDetailsModalProps> = ({
                       width: '24px',
                       height: '24px',
                       borderRadius: '50%',
-                      backgroundColor: isStart || isEnd ? '#0a0a0a' : isTransfer ? '#525252' : '#ffffff',
+                      backgroundColor: isStart || isEnd ? 'var(--color-button-primary-bg)' : isTransfer ? 'var(--color-hairline-strong)' : 'var(--color-surface-raised)',
                       border: isStart || isEnd || isTransfer ? 'none' : '2px solid var(--color-hairline-strong)',
-                      color: isStart || isEnd || isTransfer ? '#ffffff' : 'var(--color-ink-muted)',
+                      color: isStart || isEnd ? 'var(--color-button-primary-text)' : 'var(--color-ink)',
                       fontSize: '11px',
                       fontWeight: 700,
                       display: 'flex',
@@ -363,8 +365,8 @@ export const RouteDetailsModal: React.FC<RouteDetailsModalProps> = ({
           type="button"
           onClick={onBack}
           style={{
-            backgroundColor: '#0a0a0a',
-            color: '#ffffff',
+            backgroundColor: 'var(--color-button-primary-bg)',
+            color: 'var(--color-button-primary-text)',
             borderRadius: 'var(--radius-full)',
             padding: '12px 28px',
             fontSize: '14px',

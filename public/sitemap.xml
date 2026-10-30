@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mybusroute.vercel.app/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://mybusroute.vercel.app/routes</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes" />
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://mybusroute.vercel.app/fare</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/fare" />
@@ -27,11 +27,1498 @@
   </url>
   <url>
     <loc>https://mybusroute.vercel.app/about</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/about" />
     <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/about" />
   </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/privacy</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/privacy" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/terms</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/terms" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=achim_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=achim_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=achim_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=active_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=active_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=active_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=agradut</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=agradut" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=agradut" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=airport_bangabandhu_avenue_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=airport_bangabandhu_avenue_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=airport_bangabandhu_avenue_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=azmeri_glory_limited</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=azmeri_glory_limited" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=azmeri_glory_limited" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ajmi</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ajmi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ajmi" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=akash</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=akash" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=akash" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=akik</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=akik" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=akik" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=al_makka</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=al_makka" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=al_makka" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=al_madina_plus_one</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=al_madina_plus_one" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=al_madina_plus_one" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=alif_route_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=alif_route_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=alif_route_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=alif_route_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=alif_route_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=alif_route_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=alif_route_3</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=alif_route_3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=alif_route_3" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=alif_route_4</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=alif_route_4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=alif_route_4" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=anabil_super</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=anabil_super" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=anabil_super" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=arnob</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=arnob" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=arnob" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ashirbad_pahibahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ashirbad_pahibahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ashirbad_pahibahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ashulia_classic</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ashulia_classic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ashulia_classic" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=asmani</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=asmani" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=asmani" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=atcl</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=atcl" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=atcl" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ayat</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ayat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ayat" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bahon</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bahon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bahon" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=baishakhi</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=baishakhi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=baishakhi" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=balaka</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=balaka" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=balaka" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=basumati</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=basumati" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=basumati" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=basumati_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=basumati_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=basumati_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=best_satabdi</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=best_satabdi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=best_satabdi" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=best_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=best_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=best_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bhuiyan_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bhuiyan_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bhuiyan_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bihanga</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bihanga" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bihanga" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bikalpa_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bikalpa_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bikalpa_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bikalpa_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bikalpa_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bikalpa_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bikash</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bikash" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bikash" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bikash_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bikash_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bikash_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bondhu_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bondhu_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bondhu_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=borak</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=borak" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=borak" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=bashumoti</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=bashumoti" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=bashumoti" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brihottor</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brihottor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brihottor" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_elevated_expressway</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_elevated_expressway" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_elevated_expressway" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_3</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_3" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_4</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_4" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_5</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_5" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_5" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_6</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_6" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_6" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_7</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_7" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_7" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_8</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_8" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_8" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_articulated</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_articulated" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_articulated" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=cantonment</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=cantonment" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=cantonment" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=cantonment_mini_service</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=cantonment_mini_service" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=cantonment_mini_service" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=champion</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=champion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=champion" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=city_link</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=city_link" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=city_link" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=d_link</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=d_link" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=d_link" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=d_one_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=d_one_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=d_one_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=desh_bangla</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=desh_bangla" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=desh_bangla" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dewan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dewan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dewan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dhakar_chaka_route_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dhakar_chaka_route_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dhakar_chaka_route_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dhakar_chaka_route_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dhakar_chaka_route_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dhakar_chaka_route_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dhaka_metro_service</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dhaka_metro_service" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dhaka_metro_service" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dhaka_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dhaka_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dhaka_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dipon</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dipon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dipon" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dip_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dip_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dip_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=dishari</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=dishari" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=dishari" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=elite</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=elite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=elite" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=etc</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=etc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=etc" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=etc_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=etc_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=etc_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=everest_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=everest_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=everest_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=falgun_art_transport_private_limited</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=falgun_art_transport_private_limited" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=falgun_art_transport_private_limited" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=first_ten</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=first_ten" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=first_ten" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ftcl_route_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ftcl_route_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ftcl_route_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ftcl_route_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ftcl_route_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ftcl_route_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=gazipur_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=gazipur_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=gazipur_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=grameen</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=grameen" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=grameen" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=grameen_suveccha</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=grameen_suveccha" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=grameen_suveccha" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=green_anabil</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=green_anabil" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=green_anabil" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=green_dhaka</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=green_dhaka" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=green_dhaka" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=gulshan_chaka</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=gulshan_chaka" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=gulshan_chaka" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=hazi_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=hazi_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=hazi_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=himachal</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=himachal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=himachal" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=himachal_suveccha</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=himachal_suveccha" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=himachal_suveccha" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=himalay</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=himalay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=himalay" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=itihash</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=itihash" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=itihash" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=j_m_super_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=j_m_super_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=j_m_super_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=jabale_noor_paribahan_route_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=jabale_noor_paribahan_route_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=jabale_noor_paribahan_route_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=jabale_noor_paribahan_route_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=jabale_noor_paribahan_route_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=jabale_noor_paribahan_route_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=janjabil</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=janjabil" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=janjabil" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=kamal_plus_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=kamal_plus_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=kamal_plus_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=kanak</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=kanak" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=kanak" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=khajababa</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=khajababa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=khajababa" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=kironmala_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=kironmala_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=kironmala_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=labbayek</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=labbayek" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=labbayek" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=lal_sabuj</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=lal_sabuj" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=lal_sabuj" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=lams_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=lams_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=lams_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=malancha</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=malancha" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=malancha" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=manjil_express</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=manjil_express" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=manjil_express" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=meghla_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=meghla_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=meghla_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=meshkat</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=meshkat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=meshkat" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=midline</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=midline" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=midline" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mirpur_metro_services</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mirpur_metro_services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mirpur_metro_services" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mirpur_link</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mirpur_link" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mirpur_link" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mirpur_mission</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mirpur_mission" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mirpur_mission" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mirpur_transport_service</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mirpur_transport_service" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mirpur_transport_service" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mirpur_united_service</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mirpur_united_service" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mirpur_united_service" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mm_lovely</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mm_lovely" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mm_lovely" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=modhumita</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=modhumita" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=modhumita" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mohona</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mohona" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mohona" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=moitri</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=moitri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=moitri" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=moumita</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=moumita" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=moumita" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=mtcl_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=mtcl_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=mtcl_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=nur_e_makka</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=nur_e_makka" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=nur_e_makka" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=nabakali</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=nabakali" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=nabakali" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=new_vision</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=new_vision" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=new_vision" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=nilachol</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=nilachol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=nilachol" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=nishorgo</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=nishorgo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=nishorgo" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=omama_international</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=omama_international" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=omama_international" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=one_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=one_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=one_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=pallabi_local_service</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=pallabi_local_service" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=pallabi_local_service" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=pallabi_super</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=pallabi_super" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=pallabi_super" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=paristhan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=paristhan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=paristhan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=power_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=power_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=power_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=prattay</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=prattay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=prattay" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=prochesta</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=prochesta" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=prochesta" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=projapati</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=projapati" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=projapati" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=provati_banasree</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=provati_banasree" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=provati_banasree" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=purbachol_logistics_and_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=purbachol_logistics_and_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=purbachol_logistics_and_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=raida</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=raida" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=raida" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=raja_city</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=raja_city" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=raja_city" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=rajanigandha</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=rajanigandha" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=rajanigandha" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=rajdhani_super</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=rajdhani_super" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=rajdhani_super" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ramjan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ramjan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ramjan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=robrob</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=robrob" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=robrob" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=rois</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=rois" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=rois" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=rongdhonu_express</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=rongdhonu_express" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=rongdhonu_express" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=runway_express</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=runway_express" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=runway_express" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=rupa_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=rupa_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=rupa_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=rupkotha</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=rupkotha" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=rupkotha" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=safety_druti</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=safety_druti" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=safety_druti" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=sakalpa_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=sakalpa_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=sakalpa_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=salsabil</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=salsabil" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=salsabil" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=savar_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=savar_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=savar_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=shadhin</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=shadhin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=shadhin" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=shadhin_express</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=shadhin_express" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=shadhin_express" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=shahria_enterprise</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=shahria_enterprise" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=shahria_enterprise" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=shatabdi</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=shatabdi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=shatabdi" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=shikhor_paribahan_route_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=shikhor_paribahan_route_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=shikhor_paribahan_route_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=shikhor_paribahan_route_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=shikhor_paribahan_route_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=shikhor_paribahan_route_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=suveccha</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=suveccha" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=suveccha" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=suvojatri</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=suvojatri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=suvojatri" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=siam_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=siam_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=siam_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=skyline</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=skyline" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=skyline" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=somota_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=somota_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=somota_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=somoy</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=somoy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=somoy" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=somoy_niyantran</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=somoy_niyantran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=somoy_niyantran" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=super</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=super" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=super" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=supravat</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=supravat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=supravat" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=swajan_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=swajan_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=swajan_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=talukdar</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=talukdar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=talukdar" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=tanjil_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=tanjil_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=tanjil_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=taranga_plus</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=taranga_plus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=taranga_plus" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=tetulia</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=tetulia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=tetulia" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=thikana</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=thikana" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=thikana" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=thikana_express</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=thikana_express" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=thikana_express" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=titas</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=titas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=titas" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=transilva</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=transilva" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=transilva" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_1</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_1" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_2</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_2" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_3</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_route_3" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=trust_transport_services_ac</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_ac" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=trust_transport_services_ac" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=turag</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=turag" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=turag" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=victor_classic</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=victor_classic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=victor_classic" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=victor_paribahan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=victor_paribahan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=victor_paribahan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=vip_27</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=vip_27" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=vip_27" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=welcome</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=welcome" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=welcome" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=winner</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=winner" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=winner" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=13_no</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=13_no" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=13_no" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=4_no_alike</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=4_no_alike" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=4_no_alike" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=6_no</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=6_no" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=6_no" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=6_no_motijheel_banani_transport</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=6_no_motijheel_banani_transport" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=6_no_motijheel_banani_transport" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=7_no</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=7_no" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=7_no" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=8_no</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=8_no" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=8_no" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=9_no</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=9_no" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=9_no" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=deepan</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=deepan" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=deepan" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=brtc_route_9</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=brtc_route_9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=brtc_route_9" />
+  </url>
+  <url>
+    <loc>https://mybusroute.vercel.app/routes?bus=ocr_b136</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mybusroute.vercel.app/routes?bus=ocr_b136" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mybusroute.vercel.app/routes?bus=ocr_b136" />
+  </url>
 </urlset>
-

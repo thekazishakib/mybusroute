@@ -8,9 +8,13 @@ import {
   getRouteDisplayName,
   getStopDisplayName,
   getBusOperatingHours,
+  getRouteConfidence,
 } from '../data/load';
 import { RouteMap } from '../components/RouteMap';
-import { SearchIcon, PinIcon, BusIcon, ClockIcon } from '../components/Icons';
+import { SearchIcon, PinIcon, BusIcon, ClockIcon, CloseIcon, ArrowRightIcon, TransferIcon, CheckIcon, EditIcon } from '../components/Icons';
+import { SEOHead } from '../seo/SEOHead';
+import { ReportModal } from '../components/ReportModal';
+import { trackRouteView } from '../analytics/ga4';
 import type { Route, Stop } from '../data/types';
 
 export const BusesPage: React.FC = () => {
@@ -23,6 +27,7 @@ export const BusesPage: React.FC = () => {
   });
 
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
+  const [isReportOpen, setIsReportOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,6 +63,31 @@ export const BusesPage: React.FC = () => {
     return getBusOperatingHours(selectedRoute, lang);
   }, [selectedRoute, lang]);
 
+  const routeConfidence = useMemo(() => {
+    return getRouteConfidence(selectedRoute, lang);
+  }, [selectedRoute, lang]);
+
+  useEffect(() => {
+    if (selectedRoute) {
+      trackRouteView(selectedRoute.id, getRouteDisplayName(selectedRoute, 'en'));
+    }
+  }, [selectedRoute]);
+
+  const relatedRoutes = useMemo(() => {
+    if (!selectedRoute) return [];
+    const stopSet = new Set(selectedRoute.stops);
+    return routes
+      .filter((r) => r.id !== selectedRoute.id)
+      .map((r) => ({
+        route: r,
+        sharedCount: r.stops.filter((s) => stopSet.has(s)).length,
+      }))
+      .filter((item) => item.sharedCount >= 2)
+      .sort((a, b) => b.sharedCount - a.sharedCount)
+      .slice(0, 6)
+      .map((item) => item.route);
+  }, [selectedRoute]);
+
   const filteredRoutes = useMemo(() => {
     if (!searchQuery.trim()) return routes;
     const q = searchQuery.toLowerCase().trim();
@@ -88,6 +118,30 @@ export const BusesPage: React.FC = () => {
 
   return (
     <main className="container-wide" style={{ padding: '36px 20px 80px' }}>
+      <SEOHead
+        title={
+          selectedRoute
+            ? (lang === 'bn'
+                ? `${getRouteDisplayName(selectedRoute, 'bn')} বাস রুট ও স্টপেজ তালিকা — বাসরুট`
+                : `${getRouteDisplayName(selectedRoute, 'en')} Bus Route & Stoppages — BusRoute`)
+            : undefined
+        }
+        description={
+          selectedRoute
+            ? (lang === 'bn'
+                ? `${getRouteDisplayName(selectedRoute, 'bn')} বাসের রুট (${firstStopName} থেকে ${lastStopName})। মোট ${orderedStops.length}টি স্টপেজের তালিকা ও সময়সূচী (${hoursInfo.hoursStr})।`
+                : `${getRouteDisplayName(selectedRoute, 'en')} Dhaka city bus route from ${firstStopName} to ${lastStopName}. Full list of ${orderedStops.length} stops and operating hours (${hoursInfo.hoursStr}).`)
+            : undefined
+        }
+        canonicalPath={`/routes?bus=${selectedRoute.id}`}
+      />
+
+      <ReportModal
+        isOpen={isReportOpen}
+        onClose={() => setIsReportOpen(false)}
+        busName={getRouteDisplayName(selectedRoute, lang)}
+        routeId={selectedRoute.id}
+      />
       <section style={{ marginBottom: '32px' }}>
         <div style={{ maxWidth: '800px', marginBottom: '24px' }}>
           <div
@@ -106,7 +160,7 @@ export const BusesPage: React.FC = () => {
             }}
             lang={lang}
           >
-            <BusIcon size={14} color="#0f172a" />
+            <BusIcon size={14} color="var(--color-ink)" />
             <span>{lang === 'bn' ? 'ঢাকার ১৮৪টি অনুমোদিত বাস রুট' : '184 Verified Dhaka Bus Routes'}</span>
           </div>
 
@@ -132,7 +186,7 @@ export const BusesPage: React.FC = () => {
 
         <div
           style={{
-            backgroundColor: '#ffffff',
+            backgroundColor: 'var(--color-surface-raised)',
             borderRadius: 'var(--radius-full)',
             border: '1px solid var(--color-hairline)',
             boxShadow: '0 4px 18px rgba(0,0,0,0.04)',
@@ -170,11 +224,13 @@ export const BusesPage: React.FC = () => {
                 background: 'transparent',
                 cursor: 'pointer',
                 color: 'var(--color-ink-muted)',
-                fontSize: '14px',
                 padding: '4px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
-              ✕
+              <CloseIcon size={14} color="var(--color-ink-muted)" />
             </button>
           )}
         </div>
@@ -203,9 +259,9 @@ export const BusesPage: React.FC = () => {
                 style={{
                   padding: '7px 16px',
                   borderRadius: '9999px',
-                  border: isChipSelected ? '1px solid #0a0a0a' : '1px solid var(--color-hairline)',
-                  backgroundColor: isChipSelected ? '#0a0a0a' : '#ffffff',
-                  color: isChipSelected ? '#ffffff' : 'var(--color-ink)',
+                  border: isChipSelected ? '1px solid var(--color-button-primary-bg)' : '1px solid var(--color-hairline)',
+                  backgroundColor: isChipSelected ? 'var(--color-button-primary-bg)' : 'var(--color-surface-raised)',
+                  color: isChipSelected ? 'var(--color-button-primary-text)' : 'var(--color-ink)',
                   fontSize: '12.5px',
                   fontWeight: isChipSelected ? 700 : 500,
                   cursor: 'pointer',
@@ -228,7 +284,7 @@ export const BusesPage: React.FC = () => {
               marginTop: '12px',
               maxHeight: '160px',
               overflowY: 'auto',
-              backgroundColor: '#ffffff',
+              backgroundColor: 'var(--color-surface-raised)',
               border: '1px solid var(--color-hairline)',
               borderRadius: '14px',
               padding: '8px',
@@ -249,9 +305,9 @@ export const BusesPage: React.FC = () => {
                   style={{
                     padding: '6px 14px',
                     borderRadius: '8px',
-                    border: r.id === selectedRouteId ? '1px solid #0a0a0a' : '1px solid var(--color-hairline)',
-                    backgroundColor: r.id === selectedRouteId ? '#0a0a0a' : 'var(--color-surface)',
-                    color: r.id === selectedRouteId ? '#ffffff' : 'var(--color-ink)',
+                    border: r.id === selectedRouteId ? '1px solid var(--color-button-primary-bg)' : '1px solid var(--color-hairline)',
+                    backgroundColor: r.id === selectedRouteId ? 'var(--color-button-primary-bg)' : 'var(--color-surface)',
+                    color: r.id === selectedRouteId ? 'var(--color-button-primary-text)' : 'var(--color-ink)',
                     fontSize: '12px',
                     fontWeight: 600,
                     cursor: 'pointer',
@@ -274,7 +330,7 @@ export const BusesPage: React.FC = () => {
           position: 'sticky',
           top: '72px',
           zIndex: 30,
-          backgroundColor: 'rgba(255, 255, 255, 0.96)',
+          backgroundColor: 'var(--color-surface-raised)',
           backdropFilter: 'blur(16px)',
           WebkitBackdropFilter: 'blur(16px)',
           borderRadius: isHeaderScrolled ? '9999px' : '20px',
@@ -353,7 +409,7 @@ export const BusesPage: React.FC = () => {
                   lang={lang}
                 >
                   <span>{firstStopName}</span>
-                  <span style={{ color: 'var(--color-hairline-strong)', fontSize: '15px' }}>➔</span>
+                  <ArrowRightIcon size={14} color="var(--color-ink-muted)" />
                   <span>{lastStopName}</span>
                 </div>
               )}
@@ -397,11 +453,61 @@ export const BusesPage: React.FC = () => {
                   fontSize: '12.5px',
                   color: 'var(--color-ink)',
                   fontWeight: 600,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
                 }}
                 lang={lang}
               >
-                ⇄ {t('bothDirections')}
+                <TransferIcon size={14} color="var(--color-ink)" />
+                <span>{t('bothDirections')}</span>
               </div>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginTop: '14px' }}>
+              <div
+                style={{
+                  padding: '8px 12px',
+                  borderRadius: '12px',
+                  backgroundColor: 'var(--color-surface)',
+                  border: '1px solid var(--color-hairline)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  fontSize: '12px',
+                  color: 'var(--color-ink-muted)',
+                }}
+                lang={lang}
+              >
+                <CheckIcon size={14} color="var(--color-ink)" />
+                <span>
+                  <strong style={{ color: 'var(--color-ink)' }}>{routeConfidence.badgeLabel}:</strong> {routeConfidence.badgeNote}
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setIsReportOpen(true)}
+                style={{
+                  backgroundColor: 'transparent',
+                  border: '1px solid var(--color-hairline)',
+                  borderRadius: '12px',
+                  padding: '7px 12px',
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  color: 'var(--color-ink-muted)',
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                }}
+                lang={lang}
+                title={lang === 'bn' ? 'রুটের তথ্য সংশোধন বা রিপোর্ট করুন' : 'Report route correction or missing stop'}
+              >
+                <EditIcon size={14} color="currentColor" />
+                <span>{lang === 'bn' ? 'তথ্য সংশোধন বা রিপোর্ট' : 'Report correction'}</span>
+              </button>
             </div>
           </div>
         )}
@@ -416,7 +522,7 @@ export const BusesPage: React.FC = () => {
         <div>
           <div
             style={{
-              backgroundColor: '#ffffff',
+              backgroundColor: 'var(--color-surface-raised)',
               borderRadius: '24px',
               border: '1px solid var(--color-hairline)',
               padding: '24px',
@@ -478,8 +584,8 @@ export const BusesPage: React.FC = () => {
                         width: '28px',
                         height: '28px',
                         borderRadius: '50%',
-                        backgroundColor: isFirst || isLast ? '#0a0a0a' : 'var(--color-hairline-soft)',
-                        color: isFirst || isLast ? '#ffffff' : 'var(--color-ink)',
+                        backgroundColor: isFirst || isLast ? 'var(--color-button-primary-bg)' : 'var(--color-hairline-soft)',
+                        color: isFirst || isLast ? 'var(--color-button-primary-text)' : 'var(--color-ink)',
                         fontWeight: 700,
                         fontSize: '12px',
                         display: 'flex',
@@ -505,8 +611,8 @@ export const BusesPage: React.FC = () => {
                     {isFirst && (
                       <span
                         style={{
-                          backgroundColor: '#0a0a0a',
-                          color: '#ffffff',
+                          backgroundColor: 'var(--color-button-primary-bg)',
+                          color: 'var(--color-button-primary-text)',
                           fontSize: '11px',
                           fontWeight: 700,
                           padding: '3px 8px',
@@ -522,8 +628,8 @@ export const BusesPage: React.FC = () => {
                     {isLast && (
                       <span
                         style={{
-                          backgroundColor: '#525252',
-                          color: '#ffffff',
+                          backgroundColor: 'var(--color-hairline-strong)',
+                          color: 'var(--color-ink)',
                           fontSize: '11px',
                           fontWeight: 700,
                           padding: '3px 8px',
@@ -539,6 +645,50 @@ export const BusesPage: React.FC = () => {
                 );
               })}
             </div>
+
+            {relatedRoutes.length > 0 && (
+              <div
+                style={{
+                  marginTop: '20px',
+                  backgroundColor: 'var(--color-surface)',
+                  borderRadius: '16px',
+                  border: '1px solid var(--color-hairline)',
+                  padding: '16px',
+                }}
+              >
+                <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--color-ink)', marginBottom: '6px' }} lang={lang}>
+                  {lang === 'bn' ? 'এই রুটের সাথে সম্পর্কিত সংযোগকারী বাস:' : 'Related Connecting Buses:'}
+                </div>
+                <div style={{ fontSize: '12px', color: 'var(--color-ink-muted)', marginBottom: '10px' }} lang={lang}>
+                  {lang === 'bn'
+                    ? 'সাধারণ করিডোর ও স্টপেজ শেয়ার করা অন্যান্য বাস:'
+                    : 'Buses sharing corridors or common transit stops:'}
+                </div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  {relatedRoutes.map((r) => (
+                    <button
+                      key={r.id}
+                      type="button"
+                      onClick={() => handleSelectBus(r.id)}
+                      style={{
+                        padding: '5px 12px',
+                        borderRadius: '9999px',
+                        border: '1px solid var(--color-hairline)',
+                        backgroundColor: 'var(--color-surface-raised)',
+                        color: 'var(--color-ink)',
+                        fontSize: '12px',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease',
+                      }}
+                      lang={lang}
+                    >
+                      {getRouteDisplayName(r, lang)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -553,7 +703,7 @@ export const BusesPage: React.FC = () => {
             overflow: 'hidden',
             border: '1px solid var(--color-hairline)',
             boxShadow: '0 8px 32px rgba(0,0,0,0.06)',
-            backgroundColor: '#ffffff',
+            backgroundColor: 'var(--color-surface-raised)',
           }}
         >
           <RouteMap
@@ -563,6 +713,29 @@ export const BusesPage: React.FC = () => {
             viewMode="map"
             onToggleViewMode={() => {}}
           />
+        </div>
+      </div>
+
+      <div
+        style={{
+          marginTop: '40px',
+          padding: '20px 24px',
+          backgroundColor: 'var(--color-surface)',
+          border: '1px solid var(--color-hairline)',
+          borderRadius: '16px',
+          fontSize: '13px',
+          color: 'var(--color-ink-muted)',
+          lineHeight: 1.6,
+        }}
+        lang={lang}
+      >
+        <div style={{ fontWeight: 700, color: 'var(--color-ink)', marginBottom: '4px' }}>
+          {lang === 'bn' ? 'তথ্যসূত্র, সীমাবদ্ধতা ও যাচাই নোটিশ:' : 'Data Source, Limitations & Verification Notice:'}
+        </div>
+        <div>
+          {lang === 'bn'
+            ? 'বাসের রুট এবং স্টপেজ তালিকা ঢাকা লোকাল বাস জরিপ ও ডিটিসিএ উন্মুক্ত নথি থেকে সংগৃহীত। বাস ভাড়া বিআরটিএ সরকারি প্রজ্ঞাপন (প্রতি কিমি ২.৭০ টাকা, সর্বনিম্ন ১০ টাকা) অনুযায়ী দূরত্ব ভিত্তিক আনুমানিক হিসাব। বাস্তব ক্ষেত্রে খুচরা ভাংতি বা সেকশন অনুযায়ী ±৫ টাকা কম-বেশি হতে পারে। সর্বশেষ যাচাই ও আপডেট: সেপ্টেম্বর ২০২৬।'
+            : 'Bus routes and stoppage sequences are compiled from Dhaka local bus surveys and DTCA transit records. Fares are calculated estimates using the official BRTA gazette rate (Tk 2.70/km, minimum Tk 10). Actual fares may vary by ±5 Tk due to small change coin availability or stoppage sections. Last verified & updated: September 2026.'}
         </div>
       </div>
     </main>

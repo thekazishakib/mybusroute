@@ -16,6 +16,9 @@ import {
   MapIcon,
   PrivacyIcon,
   FilterIcon,
+  ArrowRightIcon,
+  CloseIcon,
+  CheckIcon,
 } from './Icons';
 
 interface SearchResultsViewProps {
@@ -38,7 +41,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
   const mapSectionRef = useRef<HTMLDivElement>(null);
 
   const [selectedOptionIndex, setSelectedOptionIndex] = useState<number>(0);
-  const [mapViewMode, setMapViewMode] = useState<'map' | 'list'>('map');
+  const [mapViewMode, setMapViewMode] = useState<'map' | 'list' | 'google'>('map');
   const [isFullDetailsOpen, setIsFullDetailsOpen] = useState<boolean>(false);
   const [sortBy, setSortBy] = useState<'transfers' | 'fare' | 'stops'>('transfers');
   const [isStudentFare, setIsStudentFare] = useState<boolean>(false);
@@ -133,11 +136,13 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               placeholder={t('fromPlaceholder')}
               selectedStop={editFrom}
               onSelectStop={(st) => setEditFrom(st)}
-              variant="dark"
+              variant="hero"
             />
           </div>
 
-          <span className="search-arrow-col">➔</span>
+          <span className="search-arrow-col">
+            <ArrowRightIcon size={16} color="var(--color-ink-muted)" />
+          </span>
 
           <div className="search-input-col">
             <StopInput
@@ -146,7 +151,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               placeholder={t('toPlaceholder')}
               selectedStop={editTo}
               onSelectStop={(st) => setEditTo(st)}
-              variant="dark"
+              variant="hero"
             />
           </div>
 
@@ -156,7 +161,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
               className="results-search-submit-btn"
               lang={lang}
             >
-              <SearchIcon size={15} color="#0a0a0a" />
+              <SearchIcon size={15} color="currentColor" />
               <span>{t('searchButton')}</span>
             </button>
 
@@ -171,7 +176,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                 aria-label={lang === 'bn' ? 'মুছে ফেলুন' : 'Clear search'}
                 className="results-search-clear-btn"
               >
-                ✕
+                <CloseIcon size={14} color="var(--color-ink-muted)" />
               </button>
             )}
           </div>
@@ -288,12 +293,12 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                   key={idx}
                   onClick={() => setSelectedOptionIndex(idx)}
                   style={{
-                    backgroundColor: '#ffffff',
-                    border: isSelected ? '2px solid #0a0a0a' : '1px solid var(--color-hairline)',
+                    backgroundColor: 'var(--color-surface-raised)',
+                    border: isSelected ? '2px solid var(--color-button-primary-bg)' : '1px solid var(--color-hairline)',
                     borderRadius: '20px',
                     padding: '20px',
                     cursor: 'pointer',
-                    boxShadow: isSelected ? '0 8px 24px rgba(0,0,0,0.08)' : '0 2px 10px rgba(0,0,0,0.03)',
+                    boxShadow: isSelected ? '0 8px 24px rgba(0,0,0,0.1)' : '0 2px 10px rgba(0,0,0,0.03)',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
@@ -313,8 +318,8 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                             width: '28px',
                             height: '28px',
                             borderRadius: '50%',
-                            backgroundColor: isSelected ? '#0a0a0a' : 'var(--color-hairline-soft)',
-                            color: isSelected ? '#ffffff' : 'var(--color-ink)',
+                            backgroundColor: isSelected ? 'var(--color-button-primary-bg)' : 'var(--color-hairline-soft)',
+                            color: isSelected ? 'var(--color-button-primary-text)' : 'var(--color-ink)',
                             fontWeight: 700,
                             fontSize: '13px',
                             display: 'flex',
@@ -367,7 +372,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
 
                     <div style={{ fontSize: '13px', color: 'var(--color-ink-muted)', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                       <span>{getStopDisplayName(fromStop, lang)}</span>
-                      <span style={{ color: 'var(--color-hairline-strong)' }}>➔</span>
+                      <ArrowRightIcon size={12} color="var(--color-ink-muted)" />
                       <span>{getStopDisplayName(toStop, lang)}</span>
                     </div>
 
@@ -409,9 +414,9 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                             }
                           }}
                           style={{
-                            backgroundColor: isSelected ? '#0a0a0a' : 'var(--color-surface)',
-                            color: isSelected ? '#ffffff' : 'var(--color-ink)',
-                            border: isSelected ? '1px solid #0a0a0a' : '1px solid var(--color-hairline-strong)',
+                            backgroundColor: isSelected ? 'var(--color-button-primary-bg)' : 'var(--color-surface)',
+                            color: isSelected ? 'var(--color-button-primary-text)' : 'var(--color-ink)',
+                            border: isSelected ? '1px solid var(--color-button-primary-bg)' : '1px solid var(--color-hairline-strong)',
                             borderRadius: 'var(--radius-full)',
                             padding: '7px 14px',
                             fontSize: '12.5px',
@@ -426,7 +431,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                           lang={lang}
                           title={lang === 'bn' ? 'ম্যাপে দেখুন' : 'View on map'}
                         >
-                          <MapIcon size={14} color={isSelected ? '#ffffff' : 'var(--color-ink)'} />
+                          <MapIcon size={14} color={isSelected ? 'var(--color-button-primary-text)' : 'var(--color-ink)'} />
                           <span>{lang === 'bn' ? 'ম্যাপ' : 'Map'}</span>
                         </button>
 
@@ -467,7 +472,14 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                         fontWeight: isSelected ? 600 : 400,
                       }}
                     >
-                      {isSelected ? (lang === 'bn' ? '✓ ম্যাপে প্রদর্শিত হচ্ছে' : '✓ Showing on Map') : (lang === 'bn' ? 'ম্যাপে দেখতে ক্লিক করুন' : 'Click to view on map')}
+                      {isSelected ? (
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <CheckIcon size={12} color="var(--color-ink)" />
+                          <span>{lang === 'bn' ? 'ম্যাপে প্রদর্শিত হচ্ছে' : 'Showing on Map'}</span>
+                        </span>
+                      ) : (
+                        <span>{lang === 'bn' ? 'ম্যাপে দেখতে ক্লিক করুন' : 'Click to view on map'}</span>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -497,7 +509,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
             {selectedOption && (
               <div
                 style={{
-                  backgroundColor: '#ffffff',
+                  backgroundColor: 'var(--color-surface-raised)',
                   borderRadius: '20px',
                   border: '1px solid var(--color-hairline)',
                   padding: '24px',
@@ -514,8 +526,8 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                         width: '32px',
                         height: '32px',
                         borderRadius: '50%',
-                        backgroundColor: '#0a0a0a',
-                        color: '#ffffff',
+                        backgroundColor: 'var(--color-button-primary-bg)',
+                        color: 'var(--color-button-primary-text)',
                         fontWeight: 700,
                         fontSize: '13px',
                         display: 'flex',
@@ -602,7 +614,7 @@ export const SearchResultsView: React.FC<SearchResultsViewProps> = ({
                       <WalletIcon size={18} />
                     </div>
                     <div>
-                      <div style={{ fontSize: '12px', color: 'var(--color-ink-muted)' }}>{lang === 'bn' ? 'ভাড়া' : 'Fare'}</div>
+                      <div style={{ fontSize: '12px', color: 'var(--color-ink-muted)' }}>{lang === 'bn' ? 'আনুমানিক ভাড়া' : 'Estimated Fare'}</div>
                       <strong style={{ fontSize: '20px', color: 'var(--color-ink)' }}>
                         {t('aboutFare')} {formatNumber(selectedOption.totalFareTk, lang)}
                       </strong>

@@ -118,7 +118,7 @@ export const RouteCard: React.FC<RouteCardProps> = ({ option, index }) => {
                   onClick={(e) => e.stopPropagation()}
                 >
                   <Link
-                    to={`/bus/${r.id}`}
+                    to={`/routes?bus=${r.id}`}
                     style={{ color: 'inherit', textDecoration: 'none' }}
                   >
                     {rName}
@@ -180,18 +180,15 @@ export const RouteCard: React.FC<RouteCardProps> = ({ option, index }) => {
                       <span lang={lang} style={{ fontWeight: 600, color: 'var(--color-block-lilac)' }}>
                         {t('changeAt')}{' '}
                       </span>
-                      <Link
-                        to={`/stop/${leg.fromStop.id}`}
+                      <span
                         lang={lang}
                         style={{
-                          textDecoration: 'underline',
-                          textUnderlineOffset: '4px',
                           fontWeight: 700,
                           color: 'var(--color-ink)',
                         }}
                       >
                         {getStopDisplayName(leg.fromStop, lang)}
-                      </Link>
+                      </span>
                     </div>
                     <span className="caption" lang={lang} style={{ fontSize: '12px' }}>
                       {lang === 'bn' ? '(নতুন সর্বনিম্ন ১০ টাকা)' : '(Fresh min Tk 10)'}
@@ -225,7 +222,7 @@ export const RouteCard: React.FC<RouteCardProps> = ({ option, index }) => {
 
                       <h3 className="card-title" lang={lang} style={{ margin: '0 0 6px' }}>
                         <Link
-                          to={`/bus/${primaryRoute.id}`}
+                          to={`/routes?bus=${primaryRoute.id}`}
                           style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}
                         >
                           {primaryRouteTitle}
@@ -271,7 +268,7 @@ export const RouteCard: React.FC<RouteCardProps> = ({ option, index }) => {
                           return (
                             <Link
                               key={r.id}
-                              to={`/bus/${r.id}`}
+                              to={`/routes?bus=${r.id}`}
                               className="chip"
                               lang={lang}
                             >

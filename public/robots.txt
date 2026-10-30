@@ -5,8 +5,8 @@ Allow: /
 Allow: /routes
 Allow: /fare
 Allow: /about
-Allow: /bus/
-Allow: /stop/
+Allow: /privacy
+Allow: /terms
 Allow: /assets/
 Allow: /fonts/
 

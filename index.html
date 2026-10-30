@@ -12,8 +12,9 @@
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=()" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; connect-src 'self' https://*.tile.openstreetmap.org https://router.project-osrm.org https:; font-src 'self' data:;"
+      content="default-src 'self' https: data: blob:; frame-src 'self' https://maps.google.com https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob: https://www.google-analytics.com; connect-src 'self' https://*.tile.openstreetmap.org https://router.project-osrm.org https://www.googletagmanager.com https://www.google-analytics.com https:; font-src 'self' data:;"
     />
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_TOKEN" />
 
     <!-- Favicon & Icons -->
     <link rel="icon" type="image/png" href="/favicon.png" />
@@ -28,7 +29,7 @@
 
     <!-- Primary Title & Meta Description -->
     <title>BusRoute | বাসরুট — Dhaka Bus Route & Fare Finder</title>
-    <meta name="description" content="ঢাকার ১৮৪টি বাসের রুট, ২৬০টি স্টপেজ এবং বিআরটিএ (BRTA) অনুমোদিত সঠিক বাস ভাড়া এক পলকে জানুন। নির্ভুল ইন্টারচেঞ্জ ও রোড ম্যাপ।" />
+    <meta name="description" content="ঢাকার ১৮৪টি বাসের রুট, ২৬০টি স্টপেজ এবং বিআরটিএ প্রজ্ঞাপন অনুযায়ী আনুমানিক বাস ভাড়া জানুন। নির্ভুল ইন্টারচেঞ্জ ও রোড ম্যাপ।" />
     <meta name="author" content="Kazi Shakib" />
     <meta name="robots" content="index, follow" />
 
@@ -42,7 +43,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="BusRoute | বাসরুট" />
     <meta property="og:title" content="BusRoute | বাসরুট — Dhaka Bus Route & Fare Finder" />
-    <meta property="og:description" content="Find Dhaka local bus routes, intermediate stops, road-accurate maps, and official BRTA fares instantly." />
+    <meta property="og:description" content="Find Dhaka local bus routes, intermediate stops, road-accurate maps, and estimated fares based on BRTA rates." />
     <meta property="og:url" content="https://mybusroute.vercel.app/" />
     <meta property="og:image" content="https://mybusroute.vercel.app/hero-bus.png" />
     <meta property="og:locale" content="bn_BD" />
@@ -51,7 +52,7 @@
     <!-- Twitter / X Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="BusRoute | বাসরুট — Dhaka Bus Route & Fare Finder" />
-    <meta name="twitter:description" content="Find Dhaka local bus routes, intermediate stops, road-accurate maps, and official BRTA fares instantly." />
+    <meta name="twitter:description" content="Find Dhaka local bus routes, intermediate stops, road-accurate maps, and estimated fares based on BRTA rates." />
     <meta name="twitter:image" content="https://mybusroute.vercel.app/hero-bus.png" />
     <meta name="twitter:creator" content="@thekazishakib" />
 
@@ -65,7 +66,7 @@
             "@id": "https://mybusroute.vercel.app/#website",
             "url": "https://mybusroute.vercel.app/",
             "name": "BusRoute | বাসরুট",
-            "description": "Dhaka city local bus route finder with 184 routes, 260 stops, and official BRTA bus fares.",
+            "description": "Dhaka city local bus route finder with 184 routes, 260 stops, and estimated fares based on BRTA rates.",
             "publisher": {
               "@type": "Organization",
               "name": "BusRoute BD",
@@ -79,8 +80,11 @@
             },
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://mybusroute.vercel.app/?from={from_stop}&to={to_stop}",
-              "query-input": "required name=from_stop"
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://mybusroute.vercel.app/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
             }
           },
           {
@@ -107,6 +111,47 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <!-- Prerender / Semantic Crawl Fallback for Search Engines & Non-JS Clients -->
+      <header>
+        <h1>বাসরুট — ঢাকা সিটি লোকাল বাস রুট ও ভাড়া ফাইন্ডার (BusRoute Dhaka)</h1>
+        <p>ঢাকার ১৮৪টি অনুমোদিত বাসের রুট, ২৬০টি স্টপেজ এবং বিআরটিএ প্রজ্ঞাপন অনুযায়ী কিলোমিটার ভিত্তিক সরকারি বাস ভাড়া নির্দেশিকা।</p>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul>
+            <li><a href="/">হোম (Home)</a></li>
+            <li><a href="/routes">সকল বাস রুট তালিকা (All Bus Routes)</a></li>
+            <li><a href="/fare">বাস ভাড়া নির্দেশিকা (Fare Guide)</a></li>
+            <li><a href="/about">আমাদের সম্পর্কে ও ডেটা সোর্স (About &amp; Data Sources)</a></li>
+            <li><a href="/privacy">গোপনীয়তা নীতি (Privacy Policy)</a></li>
+            <li><a href="/terms">ব্যবহারের শর্তাবলী (Terms of Service)</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h2>জনপ্রিয় বাস রুট ডিরেক্টরি (Popular Dhaka Bus Routes)</h2>
+          <ul>
+            <li><a href="/routes?bus=baishakhi">বৈশাখী পরিবহন (Baishakhi Paribahan)</a></li>
+            <li><a href="/routes?bus=achim_paribahan">অসীম পরিবহন (Achim / Asim Paribahan)</a></li>
+            <li><a href="/routes?bus=alif_1">আলিফ পরিবহন ১ (Alif Bus 1)</a></li>
+            <li><a href="/routes?bus=bihanga">বিহঙ্গ পরিবহন (Bihanga Paribahan)</a></li>
+            <li><a href="/routes?bus=shikhor">শিখড় পরিবহন (Shikhor Paribahan)</a></li>
+            <li><a href="/routes?bus=raida">রাইদা এন্টারপ্রাইজ (Raida Enterprise)</a></li>
+            <li><a href="/routes?bus=victor">ভিক্টর ক্লাসিক (Victor Classic)</a></li>
+            <li><a href="/routes?bus=turag">তুরাগ পরিবহন (Turag Paribahan)</a></li>
+            <li><a href="/routes?bus=prochesta">প্রচেষ্টা পরিবহন (Prochesta Paribahan)</a></li>
+            <li><a href="/routes?bus=anabil">অনাবিল সুপার (Anabil Super)</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>বিআরটিএ সরকারি বাস ভাড়া হিসাব (BRTA Official Rate Reference)</h2>
+          <p>বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (BRTA) প্রজ্ঞাপন অনুযায়ী ঢাকা মেট্রোপলিটন এলাকায় চলাচলকারী সাধারণ সিটি বাসের ভাড়া প্রতি কিলোমিটারে ২.৭০ টাকা এবং সর্বনিম্ন ভাড়া ১০ টাকা। শিক্ষার্থীদের জন্য সরকার নির্ধারিত ৫০% হাফ ভাড়া প্রযোজ্য (সচিত্র শিক্ষাপ্রতিষ্ঠান আইডি কার্ড প্রদর্শন সাপেক্ষে, সরকারি ছুটির দিন ব্যতীত)।</p>
+        </section>
+      </main>
+      <footer>
+        <p>© 2026 BusRoute BD — লিড ডেভেলপার: কাজী সাকিব (Kazi Shakib)। তথ্যসূত্র: বিআরটিএ ও ডিটিসিএ উন্মুক্ত রেকর্ড।</p>
+      </footer>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

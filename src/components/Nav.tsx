@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { useT } from '../i18n/useT';
 import { LangToggle } from './LangToggle';
+import { ThemeToggle } from './ThemeToggle';
 import { HomeIcon, BusIcon, WalletIcon, InfoIcon } from './Icons';
 
 export const Nav: React.FC = () => {
@@ -68,14 +69,14 @@ export const Nav: React.FC = () => {
             width: '100%',
             maxWidth: isScrolled ? '640px' : '1240px',
             height: '56px',
-            backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.96)' : 'rgba(255, 255, 255, 0.92)',
+            backgroundColor: 'var(--color-surface-raised)',
             backdropFilter: 'blur(16px)',
             WebkitBackdropFilter: 'blur(16px)',
             border: '1px solid var(--color-hairline)',
             borderRadius: '9999px',
             boxShadow: isScrolled
-              ? '0 12px 36px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0,0,0,0.04)'
-              : '0 4px 20px rgba(0, 0, 0, 0.05)',
+              ? '0 12px 36px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0,0,0,0.06)'
+              : '0 4px 20px rgba(0, 0, 0, 0.06)',
             padding: '0 16px',
             display: 'flex',
             alignItems: 'center',
@@ -98,6 +99,7 @@ export const Nav: React.FC = () => {
             <img
               src="/logo.png"
               alt="BusRoute"
+              className="brand-logo"
               style={{
                 height: '32px',
                 width: 'auto',
@@ -123,8 +125,8 @@ export const Nav: React.FC = () => {
                 style={({ isActive }) => ({
                   fontSize: '13.5px',
                   fontWeight: isActive ? 600 : 500,
-                  color: isActive ? '#ffffff' : 'var(--color-ink-muted)',
-                  backgroundColor: isActive ? '#0a0a0a' : 'transparent',
+                  color: isActive ? 'var(--color-button-primary-text)' : 'var(--color-ink-muted)',
+                  backgroundColor: isActive ? 'var(--color-button-primary-bg)' : 'transparent',
                   borderRadius: '9999px',
                   padding: '6px 14px',
                   textDecoration: 'none',
@@ -140,7 +142,8 @@ export const Nav: React.FC = () => {
             ))}
           </nav>
 
-          <div style={{ flexShrink: 0 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+            <ThemeToggle />
             <LangToggle />
           </div>
         </header>
@@ -155,7 +158,7 @@ export const Nav: React.FC = () => {
           left: 0,
           right: 0,
           zIndex: 1000,
-          backgroundColor: 'rgba(255, 255, 255, 0.96)',
+          backgroundColor: 'var(--color-surface-raised)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
           borderTop: '1px solid var(--color-hairline)',
@@ -180,8 +183,8 @@ export const Nav: React.FC = () => {
               padding: '6px 4px',
               borderRadius: '12px',
               textDecoration: 'none',
-              color: isActive ? '#0a0a0a' : 'var(--color-ink-muted)',
-              backgroundColor: isActive ? 'rgba(0, 0, 0, 0.06)' : 'transparent',
+              color: isActive ? 'var(--color-ink)' : 'var(--color-ink-muted)',
+              backgroundColor: isActive ? 'var(--color-hairline-soft)' : 'transparent',
               transition: 'all 0.2s ease',
               minHeight: '48px',
             })}
@@ -190,7 +193,7 @@ export const Nav: React.FC = () => {
               <>
                 <div
                   style={{
-                    color: isActive ? '#0a0a0a' : 'inherit',
+                    color: isActive ? 'var(--color-ink)' : 'inherit',
                     transform: isActive ? 'scale(1.1)' : 'scale(1)',
                     transition: 'transform 0.2s ease',
                   }}

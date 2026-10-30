@@ -11,6 +11,7 @@ import {
   landmarks,
   stopById,
   routeById,
+  isRouteIncomplete,
 } from '../src/data/load';
 
 function collectFiles(dir: string, exts: string[]): string[] {
@@ -65,6 +66,9 @@ describe('Data integrity & hard rules', () => {
   it('has routes with page_gaps > 0 flagged as incomplete', () => {
     const gapRoutes = routes.filter((r) => (r.cross_ref?.ocr_page_gaps || 0) > 0);
     expect(gapRoutes.length).toBeGreaterThan(0);
+    for (const r of gapRoutes) {
+      expect(isRouteIncomplete(r)).toBe(true);
+    }
   });
 
   it('curated tables have source and status on every entry and do not merge Adamjee School and Adamijee College', () => {

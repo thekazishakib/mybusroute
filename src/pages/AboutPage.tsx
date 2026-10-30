@@ -193,7 +193,7 @@ export const AboutPage: React.FC = () => {
                 width: '8px',
                 height: '8px',
                 borderRadius: '50%',
-                backgroundColor: '#0a0a0a',
+                backgroundColor: 'var(--color-ink)',
                 display: 'inline-block',
               }}
             />
@@ -223,11 +223,11 @@ export const AboutPage: React.FC = () => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#0a0a0a',
+                  color: 'var(--color-ink)',
                   transition: 'transform 0.15s ease',
                 }}
               >
-                <PortfolioIcon size={18} color="#0a0a0a" />
+                <PortfolioIcon size={18} color="var(--color-ink)" />
               </a>
 
               <a
@@ -245,11 +245,11 @@ export const AboutPage: React.FC = () => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#0a0a0a',
+                  color: 'var(--color-ink)',
                   transition: 'transform 0.15s ease',
                 }}
               >
-                <LinkedinIcon size={18} color="#0a0a0a" />
+                <LinkedinIcon size={18} color="var(--color-ink)" />
               </a>
 
               <a
@@ -267,11 +267,11 @@ export const AboutPage: React.FC = () => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#0a0a0a',
+                  color: 'var(--color-ink)',
                   transition: 'transform 0.15s ease',
                 }}
               >
-                <GithubIcon size={18} color="#0a0a0a" />
+                <GithubIcon size={18} color="var(--color-ink)" />
               </a>
             </div>
           </div>
@@ -371,8 +371,8 @@ export const AboutPage: React.FC = () => {
             </div>
             <p style={{ fontSize: '14px', color: 'var(--color-ink-muted)', lineHeight: 1.65, margin: '0 0 10px 0' }} lang={lang}>
               {lang === 'bn'
-                ? 'বাসরুট অ্যাপে প্রদর্শিত সকল বাস ভাড়া বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (BRTA)-এর সরকারি প্রজ্ঞাপন (প্রতি কিমি ২.৭০ টাকা, সর্বনিম্ন ভাড়া ১০ টাকা) অনুযায়ী হিসাব করা। বাস্তব পরিস্থিতিতে সড়কে জ্যাম বা কন্ডাক্টরের কাছে খুচরা ভাংতি না থাকলে টিকিটের মূল্যে সামান্য ৫ টাকা কম-বেশি হতে পারে।'
-                : 'The bus fares shown on this platform are computed strictly using official BRTA gazette rates (BDT 2.70 per km, base fare BDT 10). Real-world fares on running buses may occasionally differ by ±5 Tk due to small change coin availability or traffic diversions.'}
+                ? 'বাসরুট অ্যাপে প্রদর্শিত সকল বাস ভাড়া বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (BRTA)-এর সরকারি প্রজ্ঞাপন (প্রতি কিমি ২.৭০ টাকা, সর্বনিম্ন ভাড়া ১০ টাকা) অনুযায়ী দূরত্ব ভিত্তিক আনুমানিক হিসাব। বাস্তব ক্ষেত্রে কন্ডাক্টরের কাছে খুচরা ভাংতি না থাকা বা স্টপেজ সেকশন অনুযায়ী টিকিটের মূল্যে সামান্য ±৫ টাকা কম-বেশি হতে পারে। এসি বাস এই হিসাবের অন্তর্ভুক্ত নয়।'
+                : 'The bus fares shown on this platform are distance-based estimates calculated using official BRTA gazette rates (BDT 2.70 per km, base fare BDT 10). Real-world fares on running buses may occasionally differ by ±5 Tk due to small change coin availability or stop section policies. AC buses are excluded.'}
             </p>
             <div
               style={{

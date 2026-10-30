@@ -57,7 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Official BRTA Fare Engine:**
-  - Per-kilometer bus fare calculation based on BRTA metropolitan circular (৳2.45/km).
+  - Per-kilometer bus fare calculation based on BRTA metropolitan circular (৳2.70/km).
   - Minimum fare enforcement (৳20 for large bus, ৳10 for minibus).
   - Student half-fare (50% concession) notice and holiday policy clarification.
 - **Developer Attribution & Social Profile Links:**

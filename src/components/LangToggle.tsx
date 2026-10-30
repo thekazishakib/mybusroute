@@ -1,8 +1,14 @@
 import React from 'react';
 import { useT } from '../i18n/useT';
+import { trackLanguageChange } from '../analytics/ga4';
 
 export const LangToggle: React.FC = () => {
   const { lang, setLang } = useT();
+
+  const handleLangChange = (nextLang: 'bn' | 'en') => {
+    setLang(nextLang);
+    trackLanguageChange(nextLang);
+  };
 
   return (
     <div
@@ -23,7 +29,7 @@ export const LangToggle: React.FC = () => {
         lang="bn"
         className="lang-toggle-btn"
         aria-pressed={lang === 'bn'}
-        onClick={() => setLang('bn')}
+        onClick={() => handleLangChange('bn')}
         style={{
           border: 'none',
           borderRadius: 'var(--radius-full)',
@@ -45,7 +51,7 @@ export const LangToggle: React.FC = () => {
         lang="en"
         className="lang-toggle-btn"
         aria-pressed={lang === 'en'}
-        onClick={() => setLang('en')}
+        onClick={() => handleLangChange('en')}
         style={{
           border: 'none',
           borderRadius: 'var(--radius-full)',

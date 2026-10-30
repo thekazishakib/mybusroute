@@ -1,22 +1,22 @@
 # BusRoute - Dhaka Bus Route & Fare Finder
-> The authoritative digital guide to metropolitan Dhaka's local bus routes, intermediate stoppages, and official BRTA government fares.
+> An independent transit guide to metropolitan Dhaka's local bus routes, intermediate stoppages, and estimated fares based on official BRTA distance rates.
 
-BusRoute is an open transit platform developed by Kazi Shakib. It provides verified local bus network data for metropolitan Dhaka, Bangladesh, covering 184 active bus routes and 260 distinct bus stops. The platform calculates road-accurate paths, interchange transfers, and official BRTA distance-based fares.
+BusRoute is an open transit platform developed by Kazi Shakib. It provides verified local bus network data for metropolitan Dhaka, Bangladesh, covering 184 active bus routes and 260 distinct bus stops. The platform calculates road-accurate paths, interchange transfers, and estimated fares based on the official BRTA circular rate (৳2.70 per km, minimum ৳10).
 
 ## Main Pages
 - Home & Route Search: https://mybusroute.vercel.app/ - Search origin and destination to find direct buses, transfer routes, stoppage timelines, and estimated fares.
 - All Buses & Routes: https://mybusroute.vercel.app/routes - Directory of all 184 local buses running in Dhaka with complete stoppage sequences.
-- Official Fare Guide: https://mybusroute.vercel.app/fare - Government BRTA fare circular (৳2.45 per km, minimum ৳20/৳10), student 50% discount rules, and travel guidelines.
-- About & Developer: https://mybusroute.vercel.app/about - Platform mission, government data sources (BRTA/DTCA), algorithm design, and developer credits for Kazi Shakib.
+- Fare Guide: https://mybusroute.vercel.app/fare - BRTA fare circular guidelines (৳2.70 per km, minimum ৳10), student 50% discount rules, and travel advice.
+- About & Developer: https://mybusroute.vercel.app/about - Platform mission, open transit data sources (BRTA circulars / DTCA), algorithm design, and developer credits for Kazi Shakib.
 
 ## Key Facts & Transit Standards
 - Location: Dhaka Metropolitan Area, Bangladesh (Coordinates: 23.8103° N, 90.4125° E).
-- Official Bus Fare Rate: ৳2.45 per kilometer (BRTA notified rate).
-- Minimum Bus Fare: ৳20 for large buses, ৳10 for minibuses.
+- Official Bus Fare Rate: ৳2.70 per kilometer (BRTA notified rate).
+- Minimum Bus Fare: ৳10 for local buses (৳8 for minibuses).
 - Student Concession: 50% half-fare on local buses with valid student ID (except official public holidays).
 - Routing Logic: Custom graph-based transit algorithm supporting direct bus paths and optimal 1-stop transfers.
 - Lead Developer: Kazi Shakib (https://www.kazishakib.com).
+- Data Status: Independent curation; last verified September 2026.
 
 ## AI Crawler Permissions
 All public content, routes, and fare data are open for indexing and citation by AI search engines (ChatGPT, Gemini, Claude, Perplexity, Bing Copilot).
-
